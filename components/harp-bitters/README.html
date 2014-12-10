@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="/main.css"></head><body><h1>harp-bitters</h1>
+<blockquote>
+<p>Add a dash of predefined style to get your <a href="http://bourbon.io/">Bourbon</a> stylesheets started off in the right direction.</p>
+</blockquote>
+<h2>Dependencies</h2>
+<ul>
+<li><a href="http://nodejs.org/">Node.js</a> – <em>Server-side JavaScript runtime</em></li>
+<li><a href="http://harpjs.com/">Harp</a> – <em>The static web server with built-in preprocessing</em></li>
+</ul>
+<h2>Install</h2>
+<p>To install Bitters, you can <a href="https://github.com/harp/bitters/archive/master.zip">download this repository</a> or use the  <a href="http://component.io">Component</a> package manager.</p>
+<pre><code class="language-bash">npm install -g component
+component install harp/bitters</code></pre>
+<pre><code class="language-bash">harp install bitters</code></pre>
+<p>Your project will look something like this…</p>
+<pre><code>myproject/                  &lt;-- Your project root (or public dir if in framework-mode)
+  |- components/            &lt;-- Harp puts components here
+  |   +- harp-bourbon/      &lt;-- Where Bourbon gets installed
+  |   +- harp-bitters/      &lt;-- Where this lib gets installed
+  |       …
+  |- main.scss              &lt;-- Where you reference Bourbon and Bitters
+  +- index.jade             &lt;-- Where you reference main.css</code></pre>
+<h2>Link</h2>
+<p>Now, from within a <code>.scss</code> file in your project, you can <code>@import</code> Bourbon and Bitters:</p>
+<pre><code class="language-scss">@import &quot;components/harp-bourbon/scss/bourbon&quot;;
+@import &quot;components/harp-bitters/scss/bitters&quot;;</code></pre>
+<p>Or, just a portion of either:</p>
+<pre><code class="language-scss">@import &quot;components/harp-bourbon/scss/bourbon&quot;;
+@import &quot;components/harp-bitters/scss/variables&quot;;
+@import &quot;components/harp-botters/forms&quot;;</code></pre>
+<h2>A note on <code>@extends</code></h2>
+<p>Bitters makes use of <code>@extends</code> in Sass, which isn’t supported in <a href="http://libsass.org">libsass</a>, and therefore Harp yet. This means <code>%button</code>, <code>%default-ul</code> and <code>%default-ol</code> can only be used with real classes (<code>.button</code>, <code>.default-ul</code>, <code>.default-ol</code>) in the meantime. This will be reverted as soon as libsass supports this feature, which should be very soon.</p>
+<h2>License</h2>
+<p>This component is <a href="http://github.com/thoughtbot/bitters">Bitters</a>, which is Copyright © 2013 thoughtbot and MIT licensed.</p>
+</body></html>
