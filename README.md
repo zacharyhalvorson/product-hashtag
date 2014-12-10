@@ -1,7 +1,5 @@
 # Hastags For Products
 
-=========
-
 A Mobify hackathon project.
 
 ## Product Definition
