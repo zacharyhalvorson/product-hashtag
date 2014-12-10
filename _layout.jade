@@ -2,5 +2,9 @@ doctype
 html
   head
     link(rel="stylesheet" href="css/main.css")
+    script(src="js/oauth.min.js")
+    script(src="js/instagram.js")
   body
     != yield
+
+    != partial('_partials/post')
