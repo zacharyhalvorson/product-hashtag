@@ -1,17 +1,16 @@
 .post
-    background-color: tomato
+    background-color: slateGray
     padding: 1rem
-    display: flex
+    margin-top: 1rem
+    color: white
 
-    &:not(:last-child)
-        margin-top: 1rem
-
-    > div
+    > div:first-child
+        display: flex
         justify-content: space-between
+        margin-bottom: 1rem
 
     .service
-        font-weight: bold
-        margin-bottom: .2rem
+        margin-bottom: .4rem
         font-size: 1.4rem
 
     .date
@@ -20,6 +19,5 @@
 
     // .user
     img
-        align-self: auto
         width: 100%
         height: auto
