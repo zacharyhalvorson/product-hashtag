@@ -22,7 +22,7 @@
 
             }
         }).fail(function(err) {
-          //todo with err
+            console.log(err);
         });
 
     });
