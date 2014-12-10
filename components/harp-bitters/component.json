@@ -1,0 +1,32 @@
+{
+  "name": "bitters",
+  "repo": "harp/bitters",
+  "description": "For Harp. Add a dash of pre-defined style to your Bourbon.",
+  "version": "0.9.2",
+  "keywords": [
+    "harp",
+    "scss",
+    "sass",
+    "bourbon",
+    "bitters"
+  ],
+  "dependencies": {
+    "harp/bourbon": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "files": [
+    "scss/_bitters.scss",
+    "scss/_flashes.scss",
+    "scss/_forms.scss",
+    "scss/_grid-settings.scss",
+    "scss/_lists.scss",
+    "scss/_tables.scss",
+    "scss/_typography.scss",
+    "scss/_variables.scss",
+    "scss/extends/_base.scss",
+    "scss/extends/_button.scss",
+    "scss/mixins/_base.scss",
+    "scss/mixins/_flash.scss"
+  ]
+}
