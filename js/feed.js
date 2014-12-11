@@ -1,6 +1,7 @@
 (function() {
     var hashtag = window.location.hash.replace('#','');
 
+    OAuth.initialize('86c6vlz6lvNWAVAfBUQnqsAr7r8');
     OAuth.popup('twitter', {cache: true}).done(function(result) {
         var twitterUrl = 'https://api.twitter.com/1.1/search/tweets.json?q=%23' + hashtag;
 
