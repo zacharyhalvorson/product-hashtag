@@ -3,8 +3,10 @@ html
   head
     link(rel="stylesheet" href="css/main.css")
     script(src="js/oauth.min.js")
-    script(src="js/instagram.js")
+    <script>OAuth.initialize('86c6vlz6lvNWAVAfBUQnqsAr7r8');</script>
+    script(src="js/feed.js")
   body
     != yield
 
     != partial('_partials/post')
+    != partial('_partials/tweet')
