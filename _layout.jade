@@ -8,10 +8,12 @@ html
     link(href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css')
     link(rel="stylesheet" href="css/main.css")
     
-    script(src="js/oauth.min.js")
-    script(src="js/feed.js")
   body
     != yield
 
     != partial('_partials/post')
     != partial('_partials/tweet')
+
+    script(src="js/oauth.min.js")
+    script(src="js/feed.js")
+            
