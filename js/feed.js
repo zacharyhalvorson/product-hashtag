@@ -1,7 +1,7 @@
 (function() {
     var hashtag = window.location.hash.replace('#','');
 
-    document.querySelector('.product-name').textContent = hashtag;
+    document.querySelector('.product-name').textContent = '# ' + hashtag;
 
     OAuth.initialize('86c6vlz6lvNWAVAfBUQnqsAr7r8');
     OAuth.popup('twitter', {cache: true}).done(function(result) {
